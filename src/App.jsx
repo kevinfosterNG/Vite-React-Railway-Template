@@ -12,7 +12,7 @@ import DataTable from './components/DataTable';
 function App() {
   const [clinicsData, setClinicsData] = useState([{}]);
   useEffect(() => {
-    var uri = "/api/clinics";
+    var uri = "https://clinicinfo-api-production.up.railway.app/api/clinics";
     fetch(uri)
       .then(response => response.json())
       // .then(console.log(`${uri} called`))
@@ -21,7 +21,7 @@ function App() {
 
   const [marketsData, setMarketsData] = useState([{}]);
   useEffect(() => {
-    var uri = "/api/markets";
+    var uri = "https://clinicinfo-api-production.up.railway.app/api/markets";
     fetch(uri)
       .then(response => response.json())
       // .then(console.log(`${uri} called`))
@@ -30,7 +30,7 @@ function App() {
 
   const [callRoutesData, setCallRoutesData] = useState([{}]);
   useEffect(() => {
-    var uri = "/api/call_routes";
+    var uri = "https://clinicinfo-api-production.up.railway.app/api/call_routes";
     fetch(uri)
       .then(response => response.json())
       // .then(console.log(`${uri} called`))
@@ -39,7 +39,7 @@ function App() {
 
   const [brandsData, setBrandsData] = useState([{}]);
   useEffect(() => {
-    var uri = "/api/brands";
+    var uri = "https://clinicinfo-api-production.up.railway.app/api/brands";
     fetch(uri)
       .then(response => response.json())
       // .then(console.log(`${uri} called`))
@@ -57,7 +57,7 @@ function App() {
 
   const [schemasData, setSchemasData] = useState([]);
   useEffect(() => {
-    var uri = "/api/schemas";
+    var uri = "https://clinicinfo-api-production.up.railway.app/api/schemas";
     fetch(uri)
       .then(response => response.json())
       // .then(console.log(`${uri} called`))
